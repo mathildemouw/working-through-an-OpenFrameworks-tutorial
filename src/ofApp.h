@@ -21,5 +21,8 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-        ofImage image;
+    ofImage image;
+    ofTrueTypeFont font;
+    string text;
+    ofSoundPlayer micro_elf;
 };

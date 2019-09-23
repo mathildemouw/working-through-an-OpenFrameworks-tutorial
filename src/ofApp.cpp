@@ -56,6 +56,9 @@ void ofApp::draw(){
     // text
     ofSetColor(255);
     ofDrawBitmapString("very very small text", 300, 300);
+
+    // font (or is it typeface?)
+    font.drawString(text, ofGetWidth() / 2 - (font.stringWidth(text) / 2), ofGetHeight() / 3);
 }
 
 //--------------------------------------------------------------
