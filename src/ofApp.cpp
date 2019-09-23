@@ -2,9 +2,23 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-//    image.load("stars_mathilde.png");
     image.load("3stars_mathilde.png");
     image.rotate90(1);
+
+    font.load("castaway.ttf", 32);
+    text = "HI I AM MATHILDE";
+
+    // audio
+    // I couldn't use the m4a I originally tried
+    micro_elf.load("2018-05-05_UM2_Test_Microscopic_Elf.wav");
+    micro_elf.setVolume(0.6);
+    // if I start on speakers,it does not detect and switch to headphones;
+    micro_elf.play();
+    micro_elf.setLoop(true);
+    // half speed
+    micro_elf.setSpeed(0.5);
+    // pan completely to the right
+    micro_elf.setPan(1.0);
 }
 
 //--------------------------------------------------------------
